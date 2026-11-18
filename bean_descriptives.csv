@@ -1,0 +1,4 @@
+bean_type,count,mean,median,std,cv_pct
+Arabica,128,15.05,15.06,5.34,35.5
+Blend,64,13.42,14.08,5.2,38.7
+Robusta,48,10.97,10.04,4.89,44.6

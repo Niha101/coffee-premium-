@@ -1,0 +1,37 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:     price_usd_per_250g   R-squared:                       0.594
+Model:                            OLS   Adj. R-squared:                  0.574
+Method:                 Least Squares   F-statistic:                     35.78
+Date:                Wed, 18 Nov 2026   Prob (F-statistic):           1.11e-43
+Time:                        06:47:13   Log-Likelihood:                -637.99
+No. Observations:                 240   AIC:                             1300.
+Df Residuals:                     228   BIC:                             1342.
+Df Model:                          11                                         
+Covariance Type:                  HC3                                         
+==================================================================================================
+                                     coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                        -37.4904      5.030     -7.454      0.000     -47.348     -27.633
+C(bean_type)[T.Blend]             -2.2284      0.617     -3.614      0.000      -3.437      -1.020
+C(bean_type)[T.Robusta]           -2.7749      0.639     -4.340      0.000      -4.028      -1.522
+C(roast)[T.Light]                 -0.1870      0.674     -0.277      0.781      -1.509       1.135
+C(roast)[T.Medium]                -0.5082      0.596     -0.853      0.393      -1.675       0.659
+C(origin)[T.Colombia]              2.1686      0.761      2.850      0.004       0.677       3.660
+C(origin)[T.Ethiopia]              2.5163      0.740      3.400      0.001       1.066       3.967
+C(origin)[T.Guatemala]             2.0176      0.864      2.336      0.019       0.325       3.710
+C(origin)[T.India]                 0.0006      0.765      0.001      0.999      -1.498       1.499
+C(origin)[T.Kenya]                 3.0217      0.911      3.318      0.001       1.237       4.807
+C(specialty_label)[T.Standard]    -3.5386      0.519     -6.819      0.000      -4.556      -2.521
+quality_score                      0.6381      0.059     10.873      0.000       0.523       0.753
+==============================================================================
+Omnibus:                        1.346   Durbin-Watson:                   1.945
+Prob(Omnibus):                  0.510   Jarque-Bera (JB):                1.236
+Skew:                          -0.009   Prob(JB):                        0.539
+Kurtosis:                       2.649   Cond. No.                     1.83e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The condition number is large, 1.83e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
